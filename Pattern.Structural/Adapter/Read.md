@@ -1,0 +1,3 @@
+﻿When building real applications, we often integrate third-party services such as payment gateways. The problem is that every provider exposes a different API. Our application, however, should not care about those differences. This is where the Adapter Design Pattern becomes extremely useful.
+
+The Adapter pattern allows us to make two incompatible interfaces work together without modifying existing code.
