@@ -1,19 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using MainApp.PatternDemo;
 using Pattern.Structural.Adapter;
 
 Console.WriteLine("Hello, World!");
 
-#region Structural Pattern - Adapter
-Console.WriteLine("Starting Structural Pattern - Adapter");
+#region Structural Pattern
 
-var paymentProcessor = new PayPalAdapter(new OldPayPalClient());
-var paymentRequest = new PaymentRequest("4111111111111111", 100.00m, "USD");
-var paymentResult = await paymentProcessor.ProcessAsync(paymentRequest);
-Console.WriteLine($"Payment Success: {paymentResult.Success}, Transaction ID: {paymentResult.TransactionId}, Message: {paymentResult.Message}");
-
-IPaymentProcessor visaClient = new VisaPaymentClient();
-var visaPaymentRequest = new PaymentRequest("5500000000000004", 50.00m, "USD");
-var visaPaymentResult = await visaClient.ProcessAsync(visaPaymentRequest);
-Console.WriteLine($"Payment Success: {visaPaymentResult.Success}, Transaction ID: {visaPaymentResult.TransactionId}, Message: {visaPaymentResult.Message}");
+IPatternDemo adapterDemo = new AdapterPatternDemo();
+await adapterDemo.RunAsync();
 
 #endregion
