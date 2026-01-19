@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="MainApp/MainApp.csproj" />
+  <Project Path="Pattern.Behavioral/Pattern.Behavioral.csproj" Id="9cd1fce1-7256-4ec1-bb0d-0355a505f8ba" />
   <Project Path="Pattern.Structural/Pattern.Structural.csproj" />
 </Solution>
