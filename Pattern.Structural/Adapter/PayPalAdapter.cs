@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Pattern.Structural.Adapter;
+﻿namespace Pattern.Structural.Adapter;
 
 public class PayPalAdapter : IPaymentProcessor
 {

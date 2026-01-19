@@ -9,6 +9,9 @@ internal class AdapterPatternDemo : IPatternDemo
 {
     public async Task RunAsync()
     {
+
+
+
         Console.WriteLine("Starting Structural Pattern - Adapter");
         var paymentRequest = new PaymentRequest("4111111111111111", 100.00m, "USD");
 
